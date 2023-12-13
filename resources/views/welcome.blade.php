@@ -23,7 +23,7 @@
                 <form method="POST" action="{{ route('saveItem') }}" accept-charset="UTF-8">
                     @csrf
                     <label for="listItem">New ToDo Item</label> <br/>
-                    <input type="text" name="listItem" /> 
+                    <input type="text" name="listItem" style="color: black;"/> 
                     <button>save item</button>                     
                 </form>
               
