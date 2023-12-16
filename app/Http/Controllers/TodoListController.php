@@ -13,6 +13,10 @@ class TodoListController extends Controller
         return view('welcome', ['listItems' => ListItem::all()]);
     }
 
+    public function markComplete($id) {
+        return redirect('/');
+    }
+
     public function saveItem(Request $request) {
         // \Log::info(json_encode($request->all()));
 
@@ -24,3 +28,4 @@ class TodoListController extends Controller
         return redirect('/');
     }
 }
+  
